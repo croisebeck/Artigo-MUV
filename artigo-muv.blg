@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: artigo-muv.aux
 The style file: sbc.bst
 Database file #1: artigo-muv.bib
-You've used 1 entry,
+You've used 3 entries,
             1935 wiz_defined-function locations,
-            477 strings with 3969 characters,
-and the built_in function-call counts, 417 in all, are:
-= -- 36
-> -- 21
-< -- 1
-+ -- 6
-- -- 6
-* -- 30
-:= -- 79
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 7
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 18
-empty$ -- 33
-format.name$ -- 9
-if$ -- 83
-int.to.chr$ -- 1
+            491 strings with 4387 characters,
+and the built_in function-call counts, 1280 in all, are:
+= -- 119
+> -- 49
+< -- 5
++ -- 15
+- -- 14
+* -- 86
+:= -- 222
+add.period$ -- 12
+call.type$ -- 3
+change.case$ -- 20
+chr.to.int$ -- 2
+cite$ -- 3
+duplicate$ -- 66
+empty$ -- 104
+format.name$ -- 21
+if$ -- 273
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 5
-pop$ -- 10
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 15
+pop$ -- 29
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 20
 quote$ -- 0
-skip$ -- 11
+skip$ -- 43
 stack$ -- 0
-substring$ -- 12
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 46
+swap$ -- 15
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 18
 warning$ -- 0
-while$ -- 3
+while$ -- 11
 width$ -- 0
-write$ -- 15
+write$ -- 43

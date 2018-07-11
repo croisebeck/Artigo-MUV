@@ -18,7 +18,7 @@
 \title{MUV - Mais Um Voo, Simulador para Estimar Atrasos Conforme Fluxo de
   Passageiros no Aeroporto de Guarulhos}
 
-\author{Miguel Antonio Copatti\inst{1},Roger Wesler Grabin\inst{2}, Anderson Seiji Ishiii\inst{3}}
+\author{Miguel Antonioo Copatti\inst{1},Roger Wesler Grabin\inst{2}, Anderson Seiji Ishiii\inst{3}}
 
 \address{Escola do Mar, Ciência e Tecnologia\\
   Universidade do Vale do Itajaí (UNIVALI)\\
@@ -81,7 +81,8 @@
   obteve uma movimentação de pessoas estimada em  37 milhões de passageiras
   com uma lotação total cerca de 40 milhões de aviões. Portanto observa-se
   que a capacidade máxima de passageiros será alcançada em um momento de
-  pico, ocasionado por atrasos imprevistos ou datas comemorativas.
+  pico, ocasionado por atrasos imprevistos ou datas comemorativas
+  \cite{Moser:07}.
   
   % Fundamentar aspectos de Modelagem/Conceitos de Trabalhos similares e de
 %estratégias utilizadas na elaboração do trabalho
@@ -89,6 +90,25 @@
 
 
 %Apresentar o objetivo geral do artigo;
+Este trabalho tem por objetivo coletar, avaliar e mensurar o tempo médio
+entre uma aterrissagem e  decolagem de cada avião no aeroporto de guarulhos, obtendo assim alguns parâmetros para a simulação computacional, funcional do aeroporto com sua infraestrutura atual.
+Posteriormente será  aplicada mudanças nas variáveis quantitativas, 
+alterando.
+
+mostrando assim um procedimento ou melhoria destinada  a população dos
+estados do Brasil, principalmente do estado SP assim como de outros países,
+para que não enfrentam congestionamentos ou cancelamentos de voos dada a 
+densidade populacional e a quantidade de aviões.
+
+O terceiro objetivo deste trabalho é medir a satisfação dos clientes, dada
+a localização, ou seja a satisfação dos clientes no aeroporto de guarulhos, seja pela quantidade de voos ou se teve atrasos ou não.
+Essa satisfação será calculada de acordo com o pouso ou e a decolagem com 
+seu respectivo atraso, preço da passagem, entrega e devolução da bagagem
+e também será observada o nível de contentamento dos clientes com o espaço
+do aeroporto, como por exemplo, praça a alimentação, comércio, 
+infraestrutura interna como por exemplo ar-condicionado, bancos, toaletes,
+etc.
+
 
 %verificar esse trexo
 Este artigo é estruturado da seguinte maneira: a Seção 2 apresenta alguns trabalhos
@@ -114,7 +134,9 @@ de tráfego cada vez mais severas em Congonhas, tais como:
 alocação de slots para operações, proibição de operação de 
 aeronaves comerciais na pista auxiliar e determinação de tempo
 máximo de permanência de aeronaves nos boxes de estacionamento,
-entre outras. 
+entre outras\cite{Medau:09}. 
+
+
 
 
 
@@ -128,11 +150,12 @@ fatores externos, como alta demanda de passageiros, fatores climaticos,
 objetos na pista, entre outros tipos de eventos que podem gerar algum 
 tipo de atraso no aeroporto.
 
+
 \subsection{FlightRadar24h}
 
 
 %gráfico com saída dos avioes
-\begin{figure}[h!]
+\begin{figure}[ht]
   \centering
   \includegraphics[width=.3\textwidth]{decolagem.png}
   \caption{Saída}
@@ -319,14 +342,17 @@ treinamento especializado , qualidade do modelo e capacidade do analista.
 
 \end{enumerate}
 
-\section{References}
+\section{Ferramenta de Simulação}
 
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g \cite{boulic:91}.
+Para simulação será utilizada a Engine unity 3D, ele conta com um motor 
+gráfico potente e possui um tempo de aprendizagem relativamente baixa.
 
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
+Outros recursos importantíssimos ela possui, como por exemplo a física, 
+\textit{pathfind} entre outros. Uma coisa que vale destacar é que a unity
+tem \textit{Assets store} que contém scripts, animação, entre outros.
+
+A principal motivação é que a \textbf{unity3D} tem sua programação já
+modelada em agentes.
 
 \bibliographystyle{sbc}
 \bibliography{artigo-muv}

@@ -1,11 +1,26 @@
 \begin{thebibliography}{}
 
-\bibitem[Medau and Gualda 2009]{boulic:91}
-Medau, J. and Gualda, N. (2009).
+\bibitem[Medau and Gualda 2009a]{boulic:91}
+Medau, J. and Gualda, N. (2009a).
 \newblock Estudo de capacidade associada a nível de serviço da Área de
   movimentação do aeroporto de são paulo - congonhas por meio de simulação
   computacional.
 \newblock In Gualda, N. D.~F. and Medau, J.~C., editors, {\em New Trends in
   Animation and Visualization}. Conference Paper.
+
+\bibitem[Medau and Gualda 2009b]{Medau:09}
+Medau, J.~C. and Gualda, N. D.~F. (2009b).
+\newblock Estudo de capacidade associada a nível de serviço da Área de
+  movimentação do aeroporto de são paulo - congonhas por meio de simulação
+  computacional.
+\newblock In USP, editor, {\em aplicação ao Aeroporto Internacional de São
+  Paulo/Guarulhos}, page~90. Tese de Mestrado.
+
+\bibitem[Moser 2007]{Moser:07}
+Moser, R.~F. (2007).
+\newblock Simulação e análise de configurações aeroportuárias utilizando
+  visual simmod.
+\newblock In USP, editor, {\em aplicação ao Aeroporto Internacional de São
+  Paulo/Guarulhos}, page 138. Tese de Mestrado.
 
 \end{thebibliography}
