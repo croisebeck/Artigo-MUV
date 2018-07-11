@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2018/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: artigo-muv.aux
 The style file: sbc.bst
 Database file #1: artigo-muv.bib
-You've used 3 entries,
+You've used 1 entry,
             1935 wiz_defined-function locations,
-            491 strings with 4034 characters,
-and the built_in function-call counts, 1265 in all, are:
-= -- 122
-> -- 45
-< -- 4
-+ -- 15
-- -- 13
-* -- 88
-:= -- 216
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 20
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 59
-empty$ -- 101
-format.name$ -- 20
-if$ -- 264
+            477 strings with 3969 characters,
+and the built_in function-call counts, 417 in all, are:
+= -- 36
+> -- 21
+< -- 1
++ -- 6
+- -- 6
+* -- 30
+:= -- 79
+add.period$ -- 4
+call.type$ -- 1
+change.case$ -- 7
+chr.to.int$ -- 1
+cite$ -- 1
+duplicate$ -- 18
+empty$ -- 33
+format.name$ -- 9
+if$ -- 83
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 18
-num.names$ -- 13
-pop$ -- 26
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 5
+pop$ -- 10
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 7
 quote$ -- 0
-skip$ -- 43
+skip$ -- 11
 stack$ -- 0
-substring$ -- 70
-swap$ -- 12
-text.length$ -- 1
+substring$ -- 12
+swap$ -- 1
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 6
 warning$ -- 0
-while$ -- 11
+while$ -- 3
 width$ -- 0
-write$ -- 42
+write$ -- 15

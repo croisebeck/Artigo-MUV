@@ -75,61 +75,74 @@
   frente ao 36,6 milhões registrados no ano anterior. Para isso seja possível,
   será construído um novo pátio para aeronave e um novo pier até 2021 para o 
   terminal 3.
+
+  Desde da sua inauguração no ano 1985, com uma área de 14 km quadrado,
+  obteve uma movimentação de pessoas estimada em  37 milhões de passageiras
+  com uma lotação total cerca de 40 milhões de aviões. Portanto observa-se
+  que a capacidade máxima de passageiros será alcançada em um momento de
+  pico, ocasionado por atrasos imprevistos ou datas comemorativas.
   
   % Fundamentar aspectos de Modelagem/Conceitos de Trabalhos similares e de
 %estratégias utilizadas na elaboração do trabalho
-na seção 2 ...
+
 
 
 %Apresentar o objetivo geral do artigo;
 
 %verificar esse trexo
-Este artigo é estruturado da seguinte maneira: a Seção 2 apresenta alguns tra-
-balhos relacionados a este, apontando algumas das abordagens discutidas na literatura;
-na sequência, a Seção 3 apresenta a metodologia para a construção do simulador
-proposto neste trabalho, a Seção 4 descreve e analisa os resultados obtidos através da
-utilização do simulador, por fim, a seção 5 e última discute sobre algumas conclusões
-extraídas a partir dos resultados coletados e da análise do simulador, objetivos
-atingidos e melhorias para o simulador.
+Este artigo é estruturado da seguinte maneira: a Seção 2 apresenta alguns trabalhos
+relacionados a este, apontando algumas das abordagens discutidas na literatura,
+em seguida, a Seção 3 apresenta a metodologia e técnicas utilizadas para a construção 
+do simulador e seus artefatos produzidos neste trabalho, a Seção 4 descreve e analisa 
+os resultados obtidos através da utilização do simulador, por fim, a seção 5 e última 
+discute sobre algumas conclusões extraídas a partir dos resultados coletados e da 
+análise do simulador, objetivos atingidos e melhorias para o simulador.
   
 
-\section{First Page} \label{sec:firstpage}
+\section{Revisão bibliográfica} \label{sec:revisaobibliografica}
 
-The first page must display the paper title, the name and address of the
-authors, the abstract in English and ``resumo'' in Portuguese (``resumos'' are
-required only for papers written in Portuguese). The title must be centered
-over the whole page, in 16 point boldface font and with 12 points of space
-before itself. Author names must be centered in 12 point font, bold, all of
-them disposed in the same line, separated by commas and with 12 points of
-space after the title. Addresses must be centered in 12 point font, also with
-12 points of space after the authors' names. E-mail addresses should be
-written using font Courier New, 10 point nominal size, with 6 points of space
-before and 6 points of space after.
+A diferença crescente entre a demanda prevista e o número de
+operações efetivamente realizadas impõe aos usuários
+restrições de oferta de voos pelas companhias aéreas que,
+impedidas de aumentar suas frequências em Congonhas, são 
+obrigadas a criar novos voos partindo de outros aeroportos,
+como Guarulhos e Campinas \cite{boulic:91}.
 
-The abstract and ``resumo'' (if is the case) must be in 12 point Times font,
-indented 0.8cm on both sides. The word \textbf{Abstract} and \textbf{Resumo},
-should be written in boldface and must precede the text.
+Em contrapartida, a ANAC vem adotando medidas de restrição 
+de tráfego cada vez mais severas em Congonhas, tais como: 
+alocação de slots para operações, proibição de operação de 
+aeronaves comerciais na pista auxiliar e determinação de tempo
+máximo de permanência de aeronaves nos boxes de estacionamento,
+entre outras. 
 
-\section{CD-ROMs and Printed Proceedings}
 
-In some conferences, the papers are published on CD-ROM while only the
-abstract is published in the printed Proceedings. In this case, authors are
-invited to prepare two final versions of the paper. One, complete, to be
-published on the CD and the other, containing only the first page, with
-abstract and ``resumo'' (for papers in Portuguese).
+\section{Metodologia}
 
-\section{Sections and Paragraphs}
+Utilizando da simulação discreta para modelar o problema afim de estimar
+quando ocorre maior demanda por voos no aeroporto de Guarulhos, seja por
+fatores externos, como alta demanda de passageiros, fatores climaticos,
+objetos na pista, entre outros tipos de eventos que podem gerar algum 
+tipo de atraso no aeroporto.
 
-Section titles must be in boldface, 13pt, flush left. There should be an extra
-12 pt of space before each title. Section numbering is optional. The first
-paragraph of each section should not be indented, while the first lines of
-subsequent paragraphs should be indented by 1.27 cm.
+
+\section{Configuração do aeroporto}
+
+A configuração do sistemas de pistas  em geral , o fator mais importante
+para determinar a capacidade de um aeroporto , sendo que o mais comum 
+gargalo do sistema aeroportuário como um todo . Quando capacidade do 
+sistema de pistas é excedido , o aeroporto invariavelmente começa a 
+sofrer atrasos.
+
+Atualmente o aeroporto de Guarulhos possui 2 pistas , a primeira foi 
+inaugurada em 1985 com  3000 metros , a segunda possui 3500 metros, 
+mais tarde ampliada para 3700 metros , há ainda previsto uma terceira
+pista com extensão de 1500 metros, porém ainda não foi construída. 
 
 \subsection{Subsections}
 
 The subsection titles must be in boldface, 12pt, flush left.
 
-\section{Figures and Captions}\label{sec:figs}
+\section{Detalhes do Simulador}\label{sec:simulador}
 
 
 Figure and table captions should be centered if less than one line
@@ -180,8 +193,7 @@ visible difference in the result.
 \section{References}
 
 Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g. \cite{knuth:84},
-\cite{boulic:91}, and \cite{smith:99}.
+the author names references in brackets, e.g \cite{boulic:91}.
 
 The references must be listed using 12 point font size, with 6 points of space
 before each reference. The first line of each reference should not be
