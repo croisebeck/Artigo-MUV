@@ -25,9 +25,10 @@
   Caixa Postal 360 -- 88302-202 -- Itajaí -- SC -- Brazil
 %\nextinstitute
   %PEGAR E-MAIL DOS PARÇAS
-  \email{\{miguel\_copatti,roger,anderson\}@live.com}
+  \email{miguel\_copatti@live.com,\{roger.grabing,a.ishii66\}@gmail.com}
+  %\email{\{nedel,flavio\}@inf.ufrgs.br, R.Bordini@durham.ac.uk,
+  %jomi@inf.furb.br}
 }
-
 \begin{document} 
 
 \maketitle
@@ -65,8 +66,8 @@
 %parágrafos)
   Atuamente o aeroporto internacional de Guarulhos ostenta o título de maior
   aeroporto do Brasil. Sua capacidade total de embarque e de desembarque é
-  de 15.352 considerando todos voos, domésticos e internacionais. A maior
-  movimentação ocorre no terminal 3 (internacional) onde o fluxo  é de
+  de 15.352 considerando todos voos, domésticos e internacionais (GRU Airport, 2018).
+  A maior movimentação ocorre no terminal 3 (internacional) onde o fluxo  é de
   8.333 passageiro/hora. Contudo a capacidade de passageiro/hora pode ser 
   afetada pela quantidade de aeronaves estacionadas no pátio do terminal
   aeroportuário. Mesmo em tempo de recessão em 2017 o aeroporto registrou 
@@ -74,7 +75,7 @@
   aumento no volume de passageiros e espera receber 60 milhões passageiro/ano,
   frente ao 36,6 milhões registrados no ano anterior. Para isso seja possível,
   será construído um novo pátio para aeronave e um novo pier até 2021 para o 
-  terminal 3.
+  terminal 3, (Aero Mgazine, 2013).
 
   Desde da sua inauguração no ano 1985, com uma área de 14 km quadrado,
   obteve uma movimentação de pessoas estimada em  37 milhões de passageiras
@@ -147,6 +148,14 @@ o periodo da tarde, durante pelo menos 1 hora, diariamente foi analisado 21
 aeronaves saindo (decolagem) 22 aeronaves chegando (aterrisando), foi desconsiderado voos do 
 tipo privado, esses que não podem ser comprado uma passagem por qualquer
 individuo num aeroporto.
+
+Durante o levantamento de dados para a modelagem do sistema, nota-se que grande parte
+da frota de aeronaves são Airbus a320 e Boeing 373, que são considerados avioes de média
+capacidade, limitadoa a 120 a 220, passageiros e o Boeing 373 85 até 215 passageiros 
+dependendo do tipo de configuração, versão e quantidade de classes na aeronave.
+
+Foi observado também aeronaves maiores com capacidade acima de 300 passageiros, porém 
+foi um número muito pequeno e apenas voos internacionais usam esse tipo de aeronave.
 
 %gráfico com chegada dos avioes
 \begin{figure}[h!]
@@ -249,33 +258,66 @@ caption.
 \label{fig:exampleFig1}
 \end{figure}
 
+\section{Modelagem e simulação}
 
-%example
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.3\textwidth]{fig2.jpg}
-\caption{This figure is an example of a figure caption taking more than one
-  line and justified considering margins mentioned in Section~\ref{sec:figs}.}
-\label{fig:exampleFig2}
-\end{figure}
+Conforme Bateman, 2013, Simulação é uma ferramenta poderosa no 
+desenvolvimento de sistemas mais eficientes, como por exemplo um simulador.
+
+A melhoria de produtividade passou de desejo a necessidade, num mundo cada 
+vez mais marcado pela globalização de mercados e pela velocidade da
+tecnologia da informação, onde as empresas vencedoras são aquelas que
+respondem de forma rápida e flexível às necessidades de seus clientes.
+Simulação é uma ferramenta poderosa no desenvolvimento de sistemas mais
+eficientes. Através dela podemos construir modelos e reconfigurar
+sistemas reais em questão de dias. Esta obra apresenta fundamentos de
+modelagem a processos contínuos (Bateman, 2013).
+
+A melhoria de produtividade passou de desejo a necessidade, num mundo 
+cada vez mais marcado pela globalização de mercados e pela velocidade
+da tecnologia da informação, onde as empresas vencedoras são aquelas
+que respondem de forma rápida e flexível às necessidades de seus clientes. 
 
 
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction
-  techniques}
-\label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
-\end{table}
+Através dela podemos construir modelos e reconfigurar sistemas
+reais em questão de dias. Esta obra apresenta fundamentos de modelagem 
+a processoscontínuos, (Bateman, 2013)
 
-\section{Images}
 
-All images and illustrations should be in black-and-white, or gray tones,
-excepting for the papers that will be electronically available (on CD-ROMs,
-internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include
-images with excessive resolution, as they may take hours to print, without any
-visible difference in the result. 
+Modelo é uma abstração da realidade , uma representação adaptada de acordo
+com o problema a ser analisado . O objetivo da simulação não é reproduzir
+a realidade em todos os aspectos, o que seria quase inviável, mas sim 
+considerar aspectos relevantes a um sistemas determinado. Pode-se dizer
+também que simulação é o processo de elaborar um modelo de um sistema
+real e conduzir experimento, com o proposito de compreender o comportamento
+e/ou avaliar várias estratégias para a operação do mesmo. Desta forma a
+simulação traz vantagens como:
+
+\begin{enumerate}
+
+\item Possibilidade de Testar novos procedimentos operacionais, tomadas
+ de decisões, estratégias de uso de pista de pouso e de rolamento, ou seja,
+ podem ser avaliadas novas estratégias sem comprometer ou intervir nas 
+ operações do aeroporto.
+
+\item Possibilidade de testar possíveis configurações de pista de pouso
+  pista de rolamento e terminais do aeroporto antes mesmo de sua construção, 
+  bem como alterações nos arranjos físicos existentes (novas pistas de pouso
+  e rolamento, terminais entre outros), antes do emprego de recursos para
+  sua implantação.
+
+\item Identificação de gargalos do sistemas , verificando quais são os 
+  subsistemas, componentes ou processos que limitam o sistemas como um
+  todo.
+
+\item Compreensão de quais variáveis são mais importantes para a capacidade
+e como essas variáveis interagem.
+
+\paragraph{}%position\
+Deve-se tomar cuidado com os dados obtidos na analise, pois o resultado 
+da simulação nunca será igual a realidade. Uma boa analise requer 
+treinamento especializado , qualidade do modelo e capacidade do analista.
+
+\end{enumerate}
 
 \section{References}
 
