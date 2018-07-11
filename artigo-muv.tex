@@ -38,7 +38,7 @@
   This meta-paper describes the style to be used in articles and short papers
   for SBC conferences. For papers in English, you should add just an abstract
   while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases, abstracts should not have more than
+  Portuguese (``resumo''). In both cases,   abstracts should not have more than
   10 lines and must be in the first page of the paper.
 \end{abstract}
      
@@ -114,7 +114,10 @@ etc.
 Este artigo é estruturado da seguinte maneira: a Seção 2 apresenta alguns trabalhos
 relacionados a este, apontando algumas das abordagens discutidas na literatura,
 em seguida, a Seção 3 apresenta a metodologia e técnicas utilizadas para a construção 
-do simulador e seus artefatos produzidos neste trabalho, a Seção 4 descreve e analisa 
+do simulador e seus artefatos produzidos neste trabalho, a Seção 4 descre
+
+
+descreve e analisa 
 os resultados obtidos através da utilização do simulador, por fim, a seção 5 e última 
 discute sobre algumas conclusões extraídas a partir dos resultados coletados e da 
 análise do simulador, objetivos atingidos e melhorias para o simulador.
@@ -151,16 +154,16 @@ objetos na pista, entre outros tipos de eventos que podem gerar algum
 tipo de atraso no aeroporto.
 
 
-\subsection{FlightRadar24h}
-
-
 %gráfico com saída dos avioes
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=.3\textwidth]{decolagem.png}
-  \caption{Saída}
+  \includegraphics[width=.6\textwidth]{dados.png}
+  \caption{Resultados aferidos através da análise no site}
   \label{fig:saida}
 \end{figure}
+
+\subsection{FlightRadar24h}
+
 
 O  FlightRadar24 é um site e aplicativo mobile que disponibiliza a
 visualização de aviões do mundo todo, em tempo real, através de mapas 
@@ -180,13 +183,58 @@ dependendo do tipo de configuração, versão e quantidade de classes na aeronav
 Foi observado também aeronaves maiores com capacidade acima de 300 passageiros, porém 
 foi um número muito pequeno e apenas voos internacionais usam esse tipo de aeronave.
 
-%gráfico com chegada dos avioes
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=.3\textwidth]{aterrisagem.png}
-  \caption{Chegada}
-  \label{fig:chegando}
-\end{figure}
+\subsection{Sistemas para análise do aeroporto}
+
+Foram utilizado algumas ferramentas para medição e analise do aeroporto 
+internacional de Guarulhos. De modo geral é possível verificar o trafego
+aero no site (Flight Radar 24.com, 2018). Nesse site afere-se os pousos 
+e decolagens bem como os aviões que estão aguardando autorização para pousar
+ou decolar. Outra ferramenta para analise é a o site da Infraero. Porém 
+ele é possível apenas obter os pousos e decolagens , não sendo possível
+por exemplo saber os voos com que não pousaram no aeroporto de Guarulhos.
+É possível também verificar inloco , observando pousos e decolagens, porém
+nesse estudo torna-se desnecessário , visto que os mesmos dados podem ser
+obtidos através do flight radar ou do site da infraero em tempo quase
+real.
+
+\subsection{Levantamentos dos dados de entrada da modelagem}
+
+O planejamento de um estudo , em particular quanto aos dados de entradas
+necessários para o modelo , é essencial para sua qualidade final. Pode-se
+simplificar a existência de três tipos de dados: Físico, demanda e tráfego. 
+Abaixo uma breve descrição dos tipos de dados de entrada.
+
+Físico: É aquilo que não se move, faz parte das configuração física do 
+aeroporto ou espaço aéreo. Como por exemplo pistas, taxiway , pátio , gates,
+ etc.)
+
+Demanda: São aqueles dados dinâmicos. Dentro dessa classe podem ser inclusos os dados estáticos provenientes de levantamentos de campos, tais como
+atrasos em solo em relação aos horários programados, números de aeronaves
+processadas num determinado período (pouso e decolagem por pista por 
+exemplo).
+
+Uma vez que a a validação do modelo e conclusões da análise dependem da
+escolha de um dia especifico de movimentação ou por um período de tráfego
+significativo, esse período deve ser do pico de tráfego do aeroporto.
+
+Regras de Tráfego: São as regras da aviação . Basicamente pode-se resumir
+em procedimentos e restrições imposto no modelo. Incluem critérios de 
+separação de uma aeronave a outra , velocidade do taxiamento, gerenciamentos
+dos pátios ou gates.
+
+
+\subsection{Validação do Modelo Base}
+Validar modelo é uma etapa muito importante e necessária para torma-lo 
+utilizável na pratica . O grande objetivo desta etapa é verificar se os
+resultados produzidos no modelo são coerentes com a realidade das operações
+do aeroporto internacional de Guarulhos, por meio de métricas. 
+É Verificado a conformidade dos valores obtidos com aqueles observados na
+situação real, por meio de medições em campo , tais como atrasos,
+movimentação de aeronaves por hora , por pista, por operação, etc.
+
+A aderência do modelo as regras de gerenciamento de tráfego , tanto em espaço
+aéreo quanto em solo, são validas também.
+
 
 
 
@@ -264,23 +312,6 @@ Os principais fatores que implicam atrasos nos aeroportos são:
 
 \end{enumerate}
 
-
-\section{Detalhes do Simulador}
-
-
-Figure and table captions should be centered if less than one line
-(Figure~\ref{fig:exampleFig1}), otherwise justified and indented by 0.8cm on
-both margins, as shown in Figure~\ref{fig:exampleFig2}. The caption font must
-be Helvetica, 10 point, boldface, with 6 points of space before and after each
-caption.
-
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.5\textwidth]{fig1.jpg}
-\caption{A typical figure}
-\label{fig:exampleFig1}
-\end{figure}
-
 \section{Modelagem e simulação}
 
 Conforme Bateman, 2013, Simulação é uma ferramenta poderosa no 
@@ -293,7 +324,7 @@ respondem de forma rápida e flexível às necessidades de seus clientes.
 Simulação é uma ferramenta poderosa no desenvolvimento de sistemas mais
 eficientes. Através dela podemos construir modelos e reconfigurar
 sistemas reais em questão de dias. Esta obra apresenta fundamentos de
-modelagem a processos contínuos (Bateman, 2013).
+modelagem a processos contínuos \cite{Bateman:13}.
 
 A melhoria de produtividade passou de desejo a necessidade, num mundo 
 cada vez mais marcado pela globalização de mercados e pela velocidade
@@ -314,6 +345,9 @@ também que simulação é o processo de elaborar um modelo de um sistema
 real e conduzir experimento, com o proposito de compreender o comportamento
 e/ou avaliar várias estratégias para a operação do mesmo. Desta forma a
 simulação traz vantagens como:
+
+
+
 
 \begin{enumerate}
 
@@ -342,6 +376,9 @@ treinamento especializado , qualidade do modelo e capacidade do analista.
 
 \end{enumerate}
 
+
+
+
 \section{Ferramenta de Simulação}
 
 Para simulação será utilizada a Engine unity 3D, ele conta com um motor 
@@ -353,6 +390,20 @@ tem \textit{Assets store} que contém scripts, animação, entre outros.
 
 A principal motivação é que a \textbf{unity3D} tem sua programação já
 modelada em agentes.
+
+
+
+\section{Conclusão}
+
+O problema discutido neste estudo foi apresentar uma visão abragente 
+sobre osbeneficios da utilização da simulação de sistemas. Para tanto, foi 
+utilizados ferramentas aplicáveis aos problemas de análise e configurações 
+aeroportuarias, selecionando especificamente o aeroporto Internacional de
+Guarulhos, para aplicação dessa metodologia, avaliando os resultados dessa
+aplicação, verificando os riscos e impactos de uma possivel alteração em
+sua infraestrutura atual, causada por passageiros em excesso ou demanada de 
+aeronaves em determinado momento, que podem ocorrer por diversos fatores.
+
 
 \bibliographystyle{sbc}
 \bibliography{artigo-muv}

@@ -1,106 +1,316 @@
 \documentclass[12pt]{article}
 
-\usepackage{sbc-template}
+\usepackage{artigo-muv}
 
 \usepackage{graphicx,url}
 
-%\usepackage[brazil]{babel}   
-\usepackage[latin1]{inputenc}  
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
-     
+
+%\usepackage[brazil]{babel}   
+%\usepackage[latin1]{inputenc}
+
+
 \sloppy
 
-\title{Instructions for Authors of SBC Conference}
+\title{MUV - Mais Um Voo, Simulador para Estimar Atrasos Conforme Fluxo de
+  Passageiros no Aeroporto de Guarulhos}
 
-\author{Miguel A. \inst{1}, Rafael H. Bordini\inst{2}, Fl�vio Rech
-  Wagner\inst{1}, Jomi F. H�bner\inst{3} }
+\author{Miguel Antonioo Copatti\inst{1},Roger Wesler Grabin\inst{2}, Anderson Seiji Ishiii\inst{3}}
 
-
-\address{Instituto de Inform�tica -- Universidade Federal do Rio Grande do Sul
-  (UFRGS)\\
-  Caixa Postal 15.064 -- 91.501-970 -- Porto Alegre -- RS -- Brazil
-\nextinstitute
-  Department of Computer Science -- University of Durham\\
-  Durhama, U.K.
-\nextinstitute
-  Departamento de Sistemas e Computao\\
-  Universidade Regional de Blumenal (FURB) -- Blumenau, SC -- Brazil
-  \email{\{nedel,flavio\}@inf.ufrgs.br, R.Bordini@durham.ac.uk,
-  jomi@inf.furb.br}
+\address{Escola do Mar, Ciência e Tecnologia\\
+  Universidade do Vale do Itajaí (UNIVALI)\\
+  Caixa Postal 360 -- 88302-202 -- Itajaí -- SC -- Brazil
+%\nextinstitute
+  %PEGAR E-MAIL DOS PARÇAS
+  \email{miguel\_copatti@live.com,\{roger.grabing,a.ishii66\}@gmail.com}
+  %\email{\{nedel,flavio\}@inf.ufrgs.br, R.Bordini@durham.ac.uk,
+  %jomi@inf.furb.br}
 }
-
 \begin{document} 
 
 \maketitle
 
 \begin{abstract}
+  %TRADUZIR RESUMO
   This meta-paper describes the style to be used in articles and short papers
   for SBC conferences. For papers in English, you should add just an abstract
   while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases, abstracts should not have more than
+  Portuguese (``resumo''). In both cases,   abstracts should not have more than
   10 lines and must be in the first page of the paper.
 \end{abstract}
      
 \begin{resumo} 
-  Este meta-artigo descreve o estilo a ser usado na confec��o de artigos e
-  resumos de artigos para publica��o nos anais das confer�ncias organizadas
-  pela SBC. � solicitada a escrita de resumo e abstract apenas para os artigos
-  escritos em portugu�s. Artigos em ingl�s dever�o apresentar apenas abstract.
+
+  %contexto do trabalho 1 paragrafo
+  %objetivo geral 1 paragrafo
+  %apresentar metodologia 1 a 2 paragrafos
+  %apresentar principais resultados 1 a 2 paragrafos 
+
+  este meta-artigo descreve o estilo a ser usado na confeco de artigos e
+  resumos de artigos para publicao nos anais das conferncias organizadas
+  pela SBC. solicitada a escrita de resumo e abstract apenas para os artigos
+  escritos em portugus. Artigos em ingls devero apresentar apenas abstract.
   Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-  n�o ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-  p�gina do artigo.
+  no ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
+  pgina do artigo.
 \end{resumo}
 
 
-\section{General Information}
+\section{Introdução}
 
-All full papers and posters (short papers) submitted to some SBC conference,
-including any supporting documents, should be written in English or in
-Portuguese. The format paper should be A4 with single column, 3.5 cm for upper
-margin, 2.5 cm for bottom margin and 3.0 cm for lateral margins, without
-headers or footers. The main font must be Times, 12 point nominal size, with 6
-points of space before each paragraph. Page numbers must be suppressed.
+%Apresentar o contexto de aplicação: do que se trata e que outros
+%lugares/universidades/pesquisas também encaram este problema (1 a 2
+%parágrafos)
+  Atuamente o aeroporto internacional de Guarulhos ostenta o título de maior
+  aeroporto do Brasil. Sua capacidade total de embarque e de desembarque é
+  de 15.352 considerando todos voos, domésticos e internacionais (GRU Airport, 2018).
+  A maior movimentação ocorre no terminal 3 (internacional) onde o fluxo  é de
+  8.333 passageiro/hora. Contudo a capacidade de passageiro/hora pode ser 
+  afetada pela quantidade de aeronaves estacionadas no pátio do terminal
+  aeroportuário. Mesmo em tempo de recessão em 2017 o aeroporto registrou 
+  aumento de 3,2\% se comparado com os dados de 2016. O Aeroporto planeja
+  aumento no volume de passageiros e espera receber 60 milhões passageiro/ano,
+  frente ao 36,6 milhões registrados no ano anterior. Para isso seja possível,
+  será construído um novo pátio para aeronave e um novo pier até 2021 para o 
+  terminal 3, (Aero Mgazine, 2013).
 
-Full papers must respect the page limits defined by the conference.
-Conferences that publish just abstracts ask for \textbf{one}-page texts.
+  Desde da sua inauguração no ano 1985, com uma área de 14 km quadrado,
+  obteve uma movimentação de pessoas estimada em  37 milhões de passageiras
+  com uma lotação total cerca de 40 milhões de aviões. Portanto observa-se
+  que a capacidade máxima de passageiros será alcançada em um momento de
+  pico, ocasionado por atrasos imprevistos ou datas comemorativas
+  \cite{Moser:07}.
+  
+  % Fundamentar aspectos de Modelagem/Conceitos de Trabalhos similares e de
+%estratégias utilizadas na elaboração do trabalho
 
-\section{First Page} \label{sec:firstpage}
 
-The first page must display the paper title, the name and address of the
-authors, the abstract in English and ``resumo'' in Portuguese (``resumos'' are
-required only for papers written in Portuguese). The title must be centered
-over the whole page, in 16 point boldface font and with 12 points of space
-before itself. Author names must be centered in 12 point font, bold, all of
-them disposed in the same line, separated by commas and with 12 points of
-space after the title. Addresses must be centered in 12 point font, also with
-12 points of space after the authors' names. E-mail addresses should be
-written using font Courier New, 10 point nominal size, with 6 points of space
-before and 6 points of space after.
 
-The abstract and ``resumo'' (if is the case) must be in 12 point Times font,
-indented 0.8cm on both sides. The word \textbf{Abstract} and \textbf{Resumo},
-should be written in boldface and must precede the text.
+%Apresentar o objetivo geral do artigo;
+Este trabalho tem por objetivo coletar, avaliar e mensurar o tempo médio
+entre uma aterrissagem e  decolagem de cada avião no aeroporto de guarulhos, obtendo assim alguns parâmetros para a simulação computacional, funcional do aeroporto com sua infraestrutura atual.
+Posteriormente será  aplicada mudanças nas variáveis quantitativas, 
+alterando.
 
-\section{CD-ROMs and Printed Proceedings}
+mostrando assim um procedimento ou melhoria destinada  a população dos
+estados do Brasil, principalmente do estado SP assim como de outros países,
+para que não enfrentam congestionamentos ou cancelamentos de voos dada a 
+densidade populacional e a quantidade de aviões.
 
-In some conferences, the papers are published on CD-ROM while only the
-abstract is published in the printed Proceedings. In this case, authors are
-invited to prepare two final versions of the paper. One, complete, to be
-published on the CD and the other, containing only the first page, with
-abstract and ``resumo'' (for papers in Portuguese).
+O terceiro objetivo deste trabalho é medir a satisfação dos clientes, dada
+a localização, ou seja a satisfação dos clientes no aeroporto de guarulhos, seja pela quantidade de voos ou se teve atrasos ou não.
+Essa satisfação será calculada de acordo com o pouso ou e a decolagem com 
+seu respectivo atraso, preço da passagem, entrega e devolução da bagagem
+e também será observada o nível de contentamento dos clientes com o espaço
+do aeroporto, como por exemplo, praça a alimentação, comércio, 
+infraestrutura interna como por exemplo ar-condicionado, bancos, toaletes,
+etc.
 
-\section{Sections and Paragraphs}
 
-Section titles must be in boldface, 13pt, flush left. There should be an extra
-12 pt of space before each title. Section numbering is optional. The first
-paragraph of each section should not be indented, while the first lines of
-subsequent paragraphs should be indented by 1.27 cm.
+%verificar esse trexo
+Este artigo é estruturado da seguinte maneira: a Seção 2 apresenta alguns trabalhos
+relacionados a este, apontando algumas das abordagens discutidas na literatura,
+em seguida, a Seção 3 apresenta a metodologia e técnicas utilizadas para a construção 
+do simulador e seus artefatos produzidos neste trabalho, a Seção 4 descreve e analisa 
+os resultados obtidos através da utilização do simulador, por fim, a seção 5 e última 
+discute sobre algumas conclusões extraídas a partir dos resultados coletados e da 
+análise do simulador, objetivos atingidos e melhorias para o simulador.
+  
 
-\subsection{Subsections}
+\section{Revisão bibliográfica} \label{sec:revisaobibliografica}
 
-The subsection titles must be in boldface, 12pt, flush left.
+A diferença crescente entre a demanda prevista e o número de
+operações efetivamente realizadas impõe aos usuários
+restrições de oferta de voos pelas companhias aéreas que,
+impedidas de aumentar suas frequências em Congonhas, são 
+obrigadas a criar novos voos partindo de outros aeroportos,
+como Guarulhos e Campinas \cite{boulic:91}.
 
-\section{Figures and Captions}\label{sec:figs}
+Em contrapartida, a ANAC vem adotando medidas de restrição 
+de tráfego cada vez mais severas em Congonhas, tais como: 
+alocação de slots para operações, proibição de operação de 
+aeronaves comerciais na pista auxiliar e determinação de tempo
+máximo de permanência de aeronaves nos boxes de estacionamento,
+entre outras\cite{Medau:09}. 
+
+
+
+
+
+
+
+\section{Metodologia}
+
+Utilizando da simulação discreta para modelar o problema afim de estimar
+quando ocorre maior demanda por voos no aeroporto de Guarulhos, seja por
+fatores externos, como alta demanda de passageiros, fatores climaticos,
+objetos na pista, entre outros tipos de eventos que podem gerar algum 
+tipo de atraso no aeroporto.
+
+
+%gráfico com saída dos avioes
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=.6\textwidth]{dados.png}
+  \caption{Resultados aferidos através da análise no site}
+  \label{fig:saida}
+\end{figure}
+
+\subsection{FlightRadar24h}
+
+
+O  FlightRadar24 é um site e aplicativo mobile que disponibiliza a
+visualização de aviões do mundo todo, em tempo real, através de mapas 
+fornecidos pela Google.
+
+Foi análisado e coletado dados, na segunda-feira e terça-feira (25 e 26 de junho), durante 
+o periodo da tarde, durante pelo menos 1 hora, diariamente foi analisado 21
+aeronaves saindo (decolagem) 22 aeronaves chegando (aterrisando), foi desconsiderado voos do 
+tipo privado, esses que não podem ser comprado uma passagem por qualquer
+individuo num aeroporto.
+
+Durante o levantamento de dados para a modelagem do sistema, nota-se que grande parte
+da frota de aeronaves são Airbus a320 e Boeing 373, que são considerados avioes de média
+capacidade, limitadoa a 120 a 220, passageiros e o Boeing 373 85 até 215 passageiros 
+dependendo do tipo de configuração, versão e quantidade de classes na aeronave.
+
+Foi observado também aeronaves maiores com capacidade acima de 300 passageiros, porém 
+foi um número muito pequeno e apenas voos internacionais usam esse tipo de aeronave.
+
+\subsection{Sistemas para análise do aeroporto}
+
+Foram utilizado algumas ferramentas para medição e analise do aeroporto 
+internacional de Guarulhos. De modo geral é possível verificar o trafego
+aero no site (Flight Radar 24.com, 2018). Nesse site afere-se os pousos 
+e decolagens bem como os aviões que estão aguardando autorização para pousar
+ou decolar. Outra ferramenta para analise é a o site da Infraero. Porém 
+ele é possível apenas obter os pousos e decolagens , não sendo possível
+por exemplo saber os voos com que não pousaram no aeroporto de Guarulhos.
+É possível também verificar inloco , observando pousos e decolagens, porém
+nesse estudo torna-se desnecessário , visto que os mesmos dados podem ser
+obtidos através do flight radar ou do site da infraero em tempo quase
+real.
+
+\subsection{Levantamentos dos dados de entrada da modelagem}
+
+O planejamento de um estudo , em particular quanto aos dados de entradas
+necessários para o modelo , é essencial para sua qualidade final. Pode-se
+simplificar a existência de três tipos de dados: Físico, demanda e tráfego. 
+Abaixo uma breve descrição dos tipos de dados de entrada.
+
+Físico: É aquilo que não se move, faz parte das configuração física do 
+aeroporto ou espaço aéreo. Como por exemplo pistas, taxiway , pátio , gates,
+ etc.)
+
+Demanda: São aqueles dados dinâmicos. Dentro dessa classe podem ser inclusos os dados estáticos provenientes de levantamentos de campos, tais como
+atrasos em solo em relação aos horários programados, números de aeronaves
+processadas num determinado período (pouso e decolagem por pista por 
+exemplo).
+
+Uma vez que a a validação do modelo e conclusões da análise dependem da
+escolha de um dia especifico de movimentação ou por um período de tráfego
+significativo, esse período deve ser do pico de tráfego do aeroporto.
+
+Regras de Tráfego: São as regras da aviação . Basicamente pode-se resumir
+em procedimentos e restrições imposto no modelo. Incluem critérios de 
+separação de uma aeronave a outra , velocidade do taxiamento, gerenciamentos
+dos pátios ou gates.
+
+
+\subsection{Validação do Modelo Base}
+Validar modelo é uma etapa muito importante e necessária para torma-lo 
+utilizável na pratica . O grande objetivo desta etapa é verificar se os
+resultados produzidos no modelo são coerentes com a realidade das operações
+do aeroporto internacional de Guarulhos, por meio de métricas. 
+É Verificado a conformidade dos valores obtidos com aqueles observados na
+situação real, por meio de medições em campo , tais como atrasos,
+movimentação de aeronaves por hora , por pista, por operação, etc.
+
+A aderência do modelo as regras de gerenciamento de tráfego , tanto em espaço
+aéreo quanto em solo, são validas também.
+
+
+
+
+\section{Configuração do aeroporto}
+
+%essa imagem nao quer ficar apos o texto [H] não funcione nem h!
+% b fica na parte inferior da página
+\begin{figure}[b!]
+  \centering
+  \includegraphics[width=.9\textwidth]{aeroporto.png}
+  \caption{Planta geral do aeroporto de Guarulhos}
+  \label{fig:aeropoto}
+\end{figure}
+
+A configuração do sistemas de pistas em geral, o fator mais importante
+para determinar a capacidade de um aeroporto , sendo que o mais comum 
+gargalo do sistema aeroportuário como um todo . Quando capacidade do 
+sistema de pistas é excedido , o aeroporto invariavelmente começa a 
+sofrer atrasos.
+
+
+
+Atualmente o aeroporto de Guarulhos possui 2 pistas , a primeira foi 
+inaugurada em 1985 com  3000 metros , a segunda possui 3500 metros, 
+mais tarde ampliada para 3700 metros , há ainda previsto uma terceira
+pista com extensão de 1500 metros, porém ainda não foi construída. 
+
+
+\section{Definição de Capacidade e atrasos}
+
+A eficácia de um sistema de transporte é a capacidade e a eficiência de
+se processar uma unidade sendo transportada Ao passo de que o desempenho
+do sistemas depende de componentes , avalia-se de forma individual cada
+um deles para que seja possível determinar o resultado do sistema como 
+um todo. 
+
+Existem duas formas mais comuns de se tratar a capacidade. A primeira delas
+é denominada capacidade prática que pode ser entendida como o número de 
+operações de aeronaves durante um intervalo de tempo, correspondente a um
+nível tolerável de atraso médio. A segunda é chamada de capacidade última,
+que é a capacidade máxima ou máxima taxa de processamento. Pode ser 
+definida como o número máximo de aeronaves que um aeródromo pode acomodar
+durante um específico intervalo de tempo, quando submetido a uma demanda
+contínua de serviço. Uma demanda contínua significa que há sempre uma 
+aeronave pronta para pouso ou decolagem. 
+
+Em termos práticos , quando duas ou mais aeronaves necessitam utilizar ao
+mesmo tempo a mesma infra-estrutura, resultará em pelo menos uma aeronave 
+ter que esperar, incorrendo em atraso. O atraso pode ser calculado em termos
+de minutos médio de espera por aeronave chegando ou partindo em condições 
+de Voos por instrumento ou voo visual. Durante os períodos de pico a demanda
+pode exceder a capacidade , o que provocará a formação de filas. São raros
+os casos em que a aeronave realiza um voo em perfeita e contínua sequência,
+sem nenhum atraso. 
+
+\subsection{Fatores que podem afetar a capacidade e atraso}
+
+Os principais fatores que implicam atrasos nos aeroportos são:
+
+%list
+
+\begin{enumerate}
+  
+  \item Configuração do aeroporto: configuração geométrica relativa das pistas 
+    em uso.
+
+  \item Picos de demanda: períodos do dia em que a demanda de tráfego é muito
+    alta.
+
+  \item Composição de frota: proporção entre os tipos de aeronave que operam no 
+  aeroporto, classificadas principalmente por peso e envergadura.
+
+  \item Meteorologia: condições climáticas no aeroporto e a tecnologia de 
+  instrumentação disponíveis
+
+\end{enumerate}
+
+
+\section{Detalhes do Simulador}
 
 
 Figure and table captions should be centered if less than one line
@@ -116,49 +326,100 @@ caption.
 \label{fig:exampleFig1}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.3\textwidth]{fig2.jpg}
-\caption{This figure is an example of a figure caption taking more than one
-  line and justified considering margins mentioned in Section~\ref{sec:figs}.}
-\label{fig:exampleFig2}
-\end{figure}
+\section{Modelagem e simulação}
 
-In tables, try to avoid the use of colored or shaded backgrounds, and avoid
-thick, doubled, or unnecessary framing lines. When reporting empirical data,
-do not use more decimal digits than warranted by their precision and
-reproducibility. Table caption must be placed before the table (see Table 1)
-and the font used must also be Helvetica, 10 point, boldface, with 6 points of
-space before and after each caption.
+Conforme Bateman, 2013, Simulação é uma ferramenta poderosa no 
+desenvolvimento de sistemas mais eficientes, como por exemplo um simulador.
 
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction
-  techniques}
-\label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
-\end{table}
+A melhoria de produtividade passou de desejo a necessidade, num mundo cada 
+vez mais marcado pela globalização de mercados e pela velocidade da
+tecnologia da informação, onde as empresas vencedoras são aquelas que
+respondem de forma rápida e flexível às necessidades de seus clientes.
+Simulação é uma ferramenta poderosa no desenvolvimento de sistemas mais
+eficientes. Através dela podemos construir modelos e reconfigurar
+sistemas reais em questão de dias. Esta obra apresenta fundamentos de
+modelagem a processos contínuos \cite{Bateman:13}.
 
-\section{Images}
+A melhoria de produtividade passou de desejo a necessidade, num mundo 
+cada vez mais marcado pela globalização de mercados e pela velocidade
+da tecnologia da informação, onde as empresas vencedoras são aquelas
+que respondem de forma rápida e flexível às necessidades de seus clientes. 
 
-All images and illustrations should be in black-and-white, or gray tones,
-excepting for the papers that will be electronically available (on CD-ROMs,
-internet, etc.). The image resolution on paper should be about 600 dpi for
-black-and-white images, and 150-300 dpi for grayscale images.  Do not include
-images with excessive resolution, as they may take hours to print, without any
-visible difference in the result. 
 
-\section{References}
+Através dela podemos construir modelos e reconfigurar sistemas
+reais em questão de dias. Esta obra apresenta fundamentos de modelagem 
+a processoscontínuos, (Bateman, 2013)
 
-Bibliographic references must be unambiguous and uniform.  We recommend giving
-the author names references in brackets, e.g. \cite{knuth:84},
-\cite{boulic:91}, and \cite{smith:99}.
 
-The references must be listed using 12 point font size, with 6 points of space
-before each reference. The first line of each reference should not be
-indented, while the subsequent should be indented by 0.5 cm.
+Modelo é uma abstração da realidade , uma representação adaptada de acordo
+com o problema a ser analisado . O objetivo da simulação não é reproduzir
+a realidade em todos os aspectos, o que seria quase inviável, mas sim 
+considerar aspectos relevantes a um sistemas determinado. Pode-se dizer
+também que simulação é o processo de elaborar um modelo de um sistema
+real e conduzir experimento, com o proposito de compreender o comportamento
+e/ou avaliar várias estratégias para a operação do mesmo. Desta forma a
+simulação traz vantagens como:
+
+
+
+
+\begin{enumerate}
+
+\item Possibilidade de Testar novos procedimentos operacionais, tomadas
+ de decisões, estratégias de uso de pista de pouso e de rolamento, ou seja,
+ podem ser avaliadas novas estratégias sem comprometer ou intervir nas 
+ operações do aeroporto.
+
+\item Possibilidade de testar possíveis configurações de pista de pouso
+  pista de rolamento e terminais do aeroporto antes mesmo de sua construção, 
+  bem como alterações nos arranjos físicos existentes (novas pistas de pouso
+  e rolamento, terminais entre outros), antes do emprego de recursos para
+  sua implantação.
+
+\item Identificação de gargalos do sistemas , verificando quais são os 
+  subsistemas, componentes ou processos que limitam o sistemas como um
+  todo.
+
+\item Compreensão de quais variáveis são mais importantes para a capacidade
+e como essas variáveis interagem.
+
+\paragraph{}%position\
+Deve-se tomar cuidado com os dados obtidos na analise, pois o resultado 
+da simulação nunca será igual a realidade. Uma boa analise requer 
+treinamento especializado , qualidade do modelo e capacidade do analista.
+
+\end{enumerate}
+
+
+
+
+\section{Ferramenta de Simulação}
+
+Para simulação será utilizada a Engine unity 3D, ele conta com um motor 
+gráfico potente e possui um tempo de aprendizagem relativamente baixa.
+
+Outros recursos importantíssimos ela possui, como por exemplo a física, 
+\textit{pathfind} entre outros. Uma coisa que vale destacar é que a unity
+tem \textit{Assets store} que contém scripts, animação, entre outros.
+
+A principal motivação é que a \textbf{unity3D} tem sua programação já
+modelada em agentes.
+
+
+
+\section{Conclusão}
+
+O problema discutido neste estudo foi apresentar uma visão abragente 
+sobre osbeneficios da utilização da simulação de sistemas. Para tanto, foi 
+utilizados ferramentas aplicáveis aos problemas de análise e configurações 
+aeroportuarias, selecionando especificamente o aeroporto Internacional de
+Guarulhos, para aplicação dessa metodologia, avaliando os resultados dessa
+aplicação, verificando os riscos e impactos de uma possivel alteração em
+sua infraestrutura atual, causada por passageiros em excesso ou demanada de 
+aeronaves em determinado momento, que podem ocorrer por diversos fatores.
+
 
 \bibliographystyle{sbc}
-\bibliography{sbc-template}
+\bibliography{artigo-muv}
 
 \end{document}
