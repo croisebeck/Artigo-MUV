@@ -116,6 +116,9 @@ máximo de permanência de aeronaves nos boxes de estacionamento,
 entre outras. 
 
 
+
+
+
 \section{Metodologia}
 
 Utilizando da simulação discreta para modelar o problema afim de estimar
@@ -125,32 +128,79 @@ objetos na pista, entre outros tipos de eventos que podem gerar algum
 tipo de atraso no aeroporto.
 
 
+
 \section{Configuração do aeroporto}
 
-A configuração do sistemas de pistas  em geral , o fator mais importante
+%essa imagem nao quer ficar apos o texto [H] não funcione nem h!
+% b fica na parte inferior da página
+\begin{figure}[b!]
+  \centering
+  \includegraphics[width=.9\textwidth]{aeroporto.png}
+  \caption{Planta geral do aeroporto de Guarulhos}
+  \label{fig:aeropoto}
+\end{figure}
+
+A configuração do sistemas de pistas em geral, o fator mais importante
 para determinar a capacidade de um aeroporto , sendo que o mais comum 
 gargalo do sistema aeroportuário como um todo . Quando capacidade do 
 sistema de pistas é excedido , o aeroporto invariavelmente começa a 
 sofrer atrasos.
+
+
 
 Atualmente o aeroporto de Guarulhos possui 2 pistas , a primeira foi 
 inaugurada em 1985 com  3000 metros , a segunda possui 3500 metros, 
 mais tarde ampliada para 3700 metros , há ainda previsto uma terceira
 pista com extensão de 1500 metros, porém ainda não foi construída. 
 
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=.9\textwidth]{aeroporto.png}
-  \caption{um aeroporto}
-  \label{fig:exampleFig1}
-\end{figure}
+
+/section{Definição de Capacidade e atrasos}
+A eficácia de um sistema de transporte é a capacidade e a eficiência de
+se processar uma unidade sendo transportada Ao passo de que o desempenho
+do sistemas depende de componentes , avalia-se de forma individual cada
+um deles para que seja possível determinar o resultado do sistema como 
+um todo. 
+
+Existem duas formas mais comuns de se tratar a capacidade. A primeira delas
+é denominada capacidade prática que pode ser entendida como o número de 
+operações de aeronaves durante um intervalo de tempo, correspondente a um
+nível tolerável de atraso médio. A segunda é chamada de capacidade última,
+que é a capacidade máxima ou máxima taxa de processamento. Pode ser 
+definida como o número máximo de aeronaves que um aeródromo pode acomodar
+durante um específico intervalo de tempo, quando submetido a uma demanda
+contínua de serviço. Uma demanda contínua significa que há sempre uma 
+aeronave pronta para pouso ou decolagem. 
+
+Em termos práticos , quando duas ou mais aeronaves necessitam utilizar ao
+mesmo tempo a mesma infra-estrutura, resultará em pelo menos uma aeronave 
+ter que esperar, incorrendo em atraso. O atraso pode ser calculado em termos
+de minutos médio de espera por aeronave chegando ou partindo em condições 
+de Voos por instrumento ou voo visual. Durante os períodos de pico a demanda
+pode exceder a capacidade , o que provocará a formação de filas. São raros
+os casos em que a aeronave realiza um voo em perfeita e contínua sequência,
+sem nenhum atraso. 
+
+\subsection{Fatores que podem afetar a capacidade e atraso}
+
+Os principais fatores que implicam atrasos nos aeroportos são:
+
+%list
+
+\begin{enumerate}
+  
+  \item Configuração do aeroporto: configuração geométrica relativa das pistas 
+    em uso.
+
+  \item Picos de demanda: períodos do dia em que a demanda de tráfego é muito
+    alta.
+
+  \item Composição de frota: proporção entre os tipos de aeronave que operam no 
+  aeroporto, classificadas principalmente por peso e envergadura.
+
+\end{enumerate}
 
 
-\subsection{Subsections}
-
-The subsection titles must be in boldface, 12pt, flush left.
-
-\section{Detalhes do Simulador}\label{sec:simulador}
+\section{Detalhes do Simulador}
 
 
 Figure and table captions should be centered if less than one line
