@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.7.11)  11 JUL 2018 02:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.7.11)  11 JUL 2018 03:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -139,7 +139,11 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) (./artigo-muv.aux)
+)) (./artigo-muv.aux
+
+LaTeX Warning: Label `fig:exampleFig1' multiply defined.
+
+)
 \openout1 = `artigo-muv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -155,8 +159,7 @@ LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 31.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -275,48 +278,56 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <13> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<fig1.jpg, id=12, 254.3904pt x 232.2276pt>
-File: fig1.jpg Graphic file (type jpg)
-<use fig1.jpg>
-Package pdftex.def Info: fig1.jpg  used on input line 150.
-(pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 151.
+<aeroporto.png, id=12, 289.08pt x 224.2779pt>
+File: aeroporto.png Graphic file (type png)
+<use aeroporto.png>
+Package pdftex.def Info: aeroporto.png  used on input line 143.
+(pdftex.def)             Requested size: 384.1096pt x 298.01889pt.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 144.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 151.
-<fig2.jpg, id=13, 205.7286pt x 234.1548pt>
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 144.
+<fig1.jpg, id=13, 254.3904pt x 232.2276pt>
+File: fig1.jpg Graphic file (type jpg)
+<use fig1.jpg>
+Package pdftex.def Info: fig1.jpg  used on input line 164.
+(pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
+<fig2.jpg, id=14, 205.7286pt x 234.1548pt>
 File: fig2.jpg Graphic file (type jpg)
 <use fig2.jpg>
-Package pdftex.def Info: fig2.jpg  used on input line 157.
+Package pdftex.def Info: fig2.jpg  used on input line 171.
 (pdftex.def)             Requested size: 128.0387pt x 145.73541pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 159.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 173.
 
 
-LaTeX Warning: Reference `sec:figs' on page 2 undefined on input line 159.
+LaTeX Warning: Reference `sec:figs' on page 2 undefined on input line 173.
 
 
-LaTeX Warning: Reference `sec:figs' on page 2 undefined on input line 159.
+LaTeX Warning: Reference `sec:figs' on page 2 undefined on input line 173.
 
-<table.jpg, id=14, 365.2044pt x 217.2918pt>
+<table.jpg, id=15, 365.2044pt x 217.2918pt>
 File: table.jpg Graphic file (type jpg)
 <use table.jpg>
-Package pdftex.def Info: table.jpg  used on input line 175.
+Package pdftex.def Info: table.jpg  used on input line 189.
 (pdftex.def)             Requested size: 298.75264pt x 177.75932pt.
-[2] (./artigo-muv.bbl) [3 <./fig1.jpg> <./fig2.jpg>] [4 <./table.jpg>]
-(./artigo-muv.aux)
+[2] (./artigo-muv.bbl) [3 <./aeroporto.png (PNG copy)>] [4 <./fig1.jpg> <./fig2
+.jpg> <./table.jpg>] (./artigo-muv.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 3354 strings out of 494528
- 45729 string characters out of 6176065
- 120486 words of memory out of 5000000
- 6928 multiletter control sequences out of 15000+600000
+ 3360 strings out of 494528
+ 45817 string characters out of 6176065
+ 120525 words of memory out of 5000000
+ 6932 multiletter control sequences out of 15000+600000
  38445 words of font info for 47 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  41i,8n,28p,310b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -327,10 +338,10 @@ pe1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on artigo-muv.pdf (4 pages, 202398 bytes).
+Output written on artigo-muv.pdf (4 pages, 941537 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
