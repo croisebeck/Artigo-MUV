@@ -35,11 +35,18 @@
 
 \begin{abstract}
   %TRADUZIR RESUMO
-  This meta-paper describes the style to be used in articles and short papers
-  for SBC conferences. For papers in English, you should add just an abstract
-  while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases,   abstracts should not have more than
-  10 lines and must be in the first page of the paper.
+  Using discrete simulation to model the problem in order to estimate when there is
+  an increased demand for flights at Guarulhos airport, whether due to external
+  factors such as high passenger demand, climatic factors, objects on the runway,
+  among other types of events that may generate some type of airport delay.
+
+  Given the context of arrivals, departures and rush, the airport of Guarulhos denotes 
+  a need for management of all fleets of companies present at the airport.
+  With this in mind, a simulation was performed that seeks, demonstrates,
+  instructs, decodes the reality about airport management, with its internal operating
+  rules and norms, through a program that seeks to transmit behavior, triggers, sliders
+  and configuration of each airplane.
+  s
 \end{abstract}
      
 \begin{resumo} 
@@ -49,13 +56,20 @@
   %apresentar metodologia 1 a 2 paragrafos
   %apresentar principais resultados 1 a 2 paragrafos 
 
-  este meta-artigo descreve o estilo a ser usado na confeco de artigos e
-  resumos de artigos para publicao nos anais das conferncias organizadas
-  pela SBC. solicitada a escrita de resumo e abstract apenas para os artigos
-  escritos em portugus. Artigos em ingls devero apresentar apenas abstract.
-  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-  no ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-  pgina do artigo.
+
+  Utilizando da simulação discreta para modelar o problema a fim de estimar quando ocorre maior
+  demanda por voos no aeroporto de Guarulhos, seja por fatores externos, como alta demanda de 
+  passageiros, fatores climáticos, objetos na pista, entre outros tipos de eventos que podem 
+  gerar algum tipo de atraso no aeroporto.
+
+  Dado o contexto dos chegada, saídas e arremetidas, no aeroporto de Guarulhos denota-se uma
+  uma necessidade de gerenciamento de todas as frotas das companhias presentes no aeroporto.
+  Com este intuito foi realizado uma simulação que busca, mostrar, instruir, decodificar a
+  realidade sobre o gerenciamento do aeroporto, com suas regras de operação interna e normas, 
+  através de um programa que procura transmitir comportamento, gatilhos, sliders e configuração
+  de tamanhos de cada avião.
+ 
+
 \end{resumo}
 
 
@@ -91,9 +105,10 @@
 
 %Apresentar o objetivo geral do artigo;
 Este trabalho tem por objetivo coletar, avaliar e mensurar o tempo médio
-entre uma aterrissagem e  decolagem de cada avião no aeroporto de guarulhos, obtendo assim alguns parâmetros para a simulação computacional, funcional do aeroporto com sua infraestrutura atual.
-Posteriormente será  aplicada mudanças nas variáveis quantitativas, 
-alterando.
+entre uma aterrissagem e  decolagem de cada avião no aeroporto de guarulhos,
+obtendo assim alguns parâmetros para a simulação computacional, funcional 
+do aeroporto com sua infraestrutura atual.
+Posteriormente será  aplicada mudanças nas variáveis quantitativas.
 
 mostrando assim um procedimento ou melhoria destinada  a população dos
 estados do Brasil, principalmente do estado SP assim como de outros países,
@@ -101,7 +116,9 @@ para que não enfrentam congestionamentos ou cancelamentos de voos dada a
 densidade populacional e a quantidade de aviões.
 
 O terceiro objetivo deste trabalho é medir a satisfação dos clientes, dada
-a localização, ou seja a satisfação dos clientes no aeroporto de guarulhos, seja pela quantidade de voos ou se teve atrasos ou não.
+a localização, ou seja a satisfação dos clientes no aeroporto de guarulhos, 
+seja pela quantidade de voos ou se teve atrasos ou não.
+
 Essa satisfação será calculada de acordo com o pouso ou e a decolagem com 
 seu respectivo atraso, preço da passagem, entrega e devolução da bagagem
 e também será observada o nível de contentamento dos clientes com o espaço
@@ -114,13 +131,11 @@ etc.
 Este artigo é estruturado da seguinte maneira: a Seção 2 apresenta alguns trabalhos
 relacionados a este, apontando algumas das abordagens discutidas na literatura,
 em seguida, a Seção 3 apresenta a metodologia e técnicas utilizadas para a construção 
-do simulador e seus artefatos produzidos neste trabalho, a Seção 4 descre
-
-
-descreve e analisa 
-os resultados obtidos através da utilização do simulador, por fim, a seção 5 e última 
-discute sobre algumas conclusões extraídas a partir dos resultados coletados e da 
-análise do simulador, objetivos atingidos e melhorias para o simulador.
+do simulador e seus artefatos produzidos neste trabalho, a Seção 4 descreve o ambiente,
+a seção 5 discute como pode ocasionar um atraso e define como pode ser entendida e trata
+da, seção 6 e 7 discutem respectivamente modelos de simulação e a ferramenta adotada
+nesse projeto e a conclusão descreve e analisa os resultados obtidos através da 
+utilização do simulador.
   
 
 \section{Revisão bibliográfica} \label{sec:revisaobibliografica}
@@ -140,19 +155,16 @@ máximo de permanência de aeronaves nos boxes de estacionamento,
 entre outras\cite{Medau:09}. 
 
 
-
-
-
-
-
 \section{Metodologia}
 
-Utilizando da simulação discreta para modelar o problema afim de estimar
-quando ocorre maior demanda por voos no aeroporto de Guarulhos, seja por
-fatores externos, como alta demanda de passageiros, fatores climaticos,
-objetos na pista, entre outros tipos de eventos que podem gerar algum 
-tipo de atraso no aeroporto.
 
+
+Dado o contexto dos chegada, saídas e arremetidas, no aeroporto de Guarulhos denota-se uma
+uma necessidade de gerenciamento de todas as frotas das companhias presentes no aeroporto.
+Com este intuito foi realizado uma simulação que busca, mostrar, instruir, decodificar a
+realidade sobre o gerenciamento do aeroporto, com suas regras de operação interna e normas, 
+através de um programa que procura transmitir comportamento, gatilhos, sliders e configuração
+de tamanhos de cada avião.
 
 %gráfico com saída dos avioes
 \begin{figure}[ht]
@@ -163,7 +175,6 @@ tipo de atraso no aeroporto.
 \end{figure}
 
 \subsection{FlightRadar24h}
-
 
 O  FlightRadar24 é um site e aplicativo mobile que disponibiliza a
 visualização de aviões do mundo todo, em tempo real, através de mapas 
@@ -199,16 +210,16 @@ real.
 
 \subsection{Levantamentos dos dados de entrada da modelagem}
 
-O planejamento de um estudo , em particular quanto aos dados de entradas
+O planejamento de um estudo, em particular quanto aos dados de entradas
 necessários para o modelo , é essencial para sua qualidade final. Pode-se
 simplificar a existência de três tipos de dados: Físico, demanda e tráfego. 
 Abaixo uma breve descrição dos tipos de dados de entrada.
 
 Físico: É aquilo que não se move, faz parte das configuração física do 
-aeroporto ou espaço aéreo. Como por exemplo pistas, taxiway , pátio , gates,
- etc.)
+aeroporto ou espaço aéreo, como por exemplo pistas, taxiway, pátio, gates, etc.
 
-Demanda: São aqueles dados dinâmicos. Dentro dessa classe podem ser inclusos os dados estáticos provenientes de levantamentos de campos, tais como
+Demanda: São aqueles dados dinâmicos. Dentro dessa classe podem ser inclusos os 
+dados estáticos provenientes de levantamentos de campos, tais como
 atrasos em solo em relação aos horários programados, números de aeronaves
 processadas num determinado período (pouso e decolagem por pista por 
 exemplo).
@@ -230,12 +241,10 @@ resultados produzidos no modelo são coerentes com a realidade das operações
 do aeroporto internacional de Guarulhos, por meio de métricas. 
 É Verificado a conformidade dos valores obtidos com aqueles observados na
 situação real, por meio de medições em campo , tais como atrasos,
-movimentação de aeronaves por hora , por pista, por operação, etc.
+movimentação de aeronaves por hora, por pista, por operação, etc.
 
-A aderência do modelo as regras de gerenciamento de tráfego , tanto em espaço
+A aderência do modelo as regras de gerenciamento de tráfego, tanto em espaço
 aéreo quanto em solo, são validas também.
-
-
 
 
 \section{Configuração do aeroporto}
@@ -377,8 +386,6 @@ treinamento especializado , qualidade do modelo e capacidade do analista.
 \end{enumerate}
 
 
-
-
 \section{Ferramenta de Simulação}
 
 Para simulação será utilizada a Engine unity 3D, ele conta com um motor 
@@ -404,6 +411,19 @@ aplicação, verificando os riscos e impactos de uma possivel alteração em
 sua infraestrutura atual, causada por passageiros em excesso ou demanada de 
 aeronaves em determinado momento, que podem ocorrer por diversos fatores.
 
+Para que a proposta seja concisa, foi modelado o espaço transitável  de aviões, 
+para que pode ser observada o caminho de cada avião, além de ser utilizados os
+recursos da \textit{engine}, o projeto foi pensado em comando em dois agente principais,
+o avião e uma central de controle. O avião é responsável por se locomover nos espaços estipulados, 
+pela central de controle e dizer quanto tempo é necessário ficar no área de taxi, a central
+de controle tem por sua vez a responsabilidade de gerenciar todo o espaço do aeroporto enviando
+portanto qual destino o avião deve seguir, ou seja, se ele tem permissão de pouso, ou se tem
+que ir para uma fila de espera ou tem que arremeter.
+
+Diante da simulação conclui-se que  existe dois fatores básicos que promove um perfeito
+funcionamento do aeroporto sem atrasos, os dois fatores especiais são a taxa de pouso 
+de cada avião mais o tempo que cada avião deve esperar dividido por espaços disponíveis
+de estacionamento. 
 
 \bibliographystyle{sbc}
 \bibliography{artigo-muv}
