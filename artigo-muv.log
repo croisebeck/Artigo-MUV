@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.7.11)  11 JUL 2018 03:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.7.11)  11 JUL 2018 05:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -275,56 +275,68 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <13> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<aeroporto.png, id=12, 289.08pt x 224.2779pt>
-File: aeroporto.png Graphic file (type png)
-<use aeroporto.png>
-Package pdftex.def Info: aeroporto.png  used on input line 138.
-(pdftex.def)             Requested size: 384.1096pt x 298.01889pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 139.
+<decolagem.png, id=12, 422.57875pt x 669.50125pt>
+File: decolagem.png Graphic file (type png)
+<use decolagem.png>
+Package pdftex.def Info: decolagem.png  used on input line 136.
+(pdftex.def)             Requested size: 128.0387pt x 202.8542pt.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 137.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 139.
- [2 <./aeroporto.png (PNG copy)>]
-<fig1.jpg, id=17, 254.3904pt x 232.2276pt>
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 137.
+<aterrisagem.png, id=14, 424.58624pt x 699.61375pt>
+File: aterrisagem.png Graphic file (type png)
+<use aterrisagem.png>
+Package pdftex.def Info: aterrisagem.png  used on input line 154.
+(pdftex.def)             Requested size: 128.0387pt x 210.97461pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<aeroporto.png, id=15, 289.08pt x 224.2779pt>
+File: aeroporto.png Graphic file (type png)
+<use aeroporto.png>
+Package pdftex.def Info: aeroporto.png  used on input line 167.
+(pdftex.def)             Requested size: 384.1096pt x 298.01889pt.
+[2 <./decolagem.png>] [3 <./aterrisagem.png> <./aeroporto.png (PNG copy)>]
+<fig1.jpg, id=25, 254.3904pt x 232.2276pt>
 File: fig1.jpg Graphic file (type jpg)
 <use fig1.jpg>
-Package pdftex.def Info: fig1.jpg  used on input line 214.
+Package pdftex.def Info: fig1.jpg  used on input line 247.
 (pdftex.def)             Requested size: 213.39568pt x 194.81471pt.
-<fig2.jpg, id=18, 205.7286pt x 234.1548pt>
+<fig2.jpg, id=26, 205.7286pt x 234.1548pt>
 File: fig2.jpg Graphic file (type jpg)
 <use fig2.jpg>
-Package pdftex.def Info: fig2.jpg  used on input line 221.
+Package pdftex.def Info: fig2.jpg  used on input line 256.
 (pdftex.def)             Requested size: 128.0387pt x 145.73541pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 223.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 258.
 
 
-LaTeX Warning: Reference `sec:figs' on page 3 undefined on input line 223.
+LaTeX Warning: Reference `sec:figs' on page 4 undefined on input line 258.
 
 
-LaTeX Warning: Reference `sec:figs' on page 3 undefined on input line 223.
+LaTeX Warning: Reference `sec:figs' on page 4 undefined on input line 258.
 
-<table.jpg, id=19, 365.2044pt x 217.2918pt>
+<table.jpg, id=27, 365.2044pt x 217.2918pt>
 File: table.jpg Graphic file (type jpg)
 <use table.jpg>
-Package pdftex.def Info: table.jpg  used on input line 239.
+Package pdftex.def Info: table.jpg  used on input line 268.
 (pdftex.def)             Requested size: 298.75264pt x 177.75932pt.
-[3] (./artigo-muv.bbl
-Underfull \vbox (badness 1371) has occurred while \output is active []
-
- [4 <./fig1.jpg> <./fig2.jpg>]) [5 <./table.jpg>] (./artigo-muv.aux)
+[4] (./artigo-muv.bbl) [5 <./fig1.jpg> <./fig2.jpg>] [6 <./table.jpg>]
+(./artigo-muv.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3360 strings out of 494528
- 45816 string characters out of 6176065
- 120486 words of memory out of 5000000
- 6932 multiletter control sequences out of 15000+600000
+ 3372 strings out of 494528
+ 46019 string characters out of 6176065
+ 120502 words of memory out of 5000000
+ 6942 multiletter control sequences out of 15000+600000
  38445 words of font info for 47 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  41i,8n,28p,310b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -335,10 +347,10 @@ pe1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on artigo-muv.pdf (5 pages, 943826 bytes).
+Output written on artigo-muv.pdf (6 pages, 1022971 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
