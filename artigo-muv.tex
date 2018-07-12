@@ -66,7 +66,7 @@
     uma necessidade de gerenciamento de todas as frotas das companhias presentes no aeroporto.
     Com este intuito foi realizado uma simulação que busca, mostrar, instruir, decodificar a
     realidade sobre o gerenciamento do aeroporto, com suas regras de operação interna e normas, 
-    através de um programa que procura transmitir comportamento, gatilhos, sliders e configuração
+    através de um programa que procura transmitir comportamento, gatilhos, \textit{sliders} e configuração
     de tamanhos de cada avião.
    
   
@@ -78,17 +78,17 @@
   %Apresentar o contexto de aplicação: do que se trata e que outros
   %lugares/universidades/pesquisas também encaram este problema (1 a 2
   %parágrafos)
-    Atuamente o aeroporto internacional de Guarulhos ostenta o título de maior
+    Atualmente o aeroporto internacional de Guarulhos ostenta o título de maior
     aeroporto do Brasil. Sua capacidade total de embarque e de desembarque é
     de 15.352 considerando todos voos, domésticos e internacionais (GRU Airport, 2018).
-    A maior movimentação ocorre no terminal 3 (internacional) onde o fluxo  é de
-    8.333 passageiro/hora. Contudo a capacidade de passageiro/hora pode ser 
+    A maior movimentação ocorre no terminal 3 (internacional) onde o fluxo é de
+    8.333 passageiros/horas. Contudo a capacidade de passageiro/hora pode ser 
     afetada pela quantidade de aeronaves estacionadas no pátio do terminal
     aeroportuário. Mesmo em tempo de recessão em 2017 o aeroporto registrou 
     aumento de 3,2\% se comparado com os dados de 2016. O Aeroporto planeja
     aumento no volume de passageiros e espera receber 60 milhões passageiro/ano,
     frente ao 36,6 milhões registrados no ano anterior. Para isso seja possível,
-    será construído um novo pátio para aeronave e um novo pier até 2021 para o 
+    será construído um novo pátio para aeronave e um novo píer até 2021 para o 
     terminal 3, (Aero Mgazine, 2013).
   
     Desde da sua inauguração no ano 1985, com uma área de 14 km quadrado,
@@ -105,10 +105,10 @@
   
   %Apresentar o objetivo geral do artigo;
   Este trabalho tem por objetivo coletar, avaliar e mensurar o tempo médio
-  entre uma aterrissagem e  decolagem de cada avião no aeroporto de guarulhos,
+  entre uma aterrissagem e  decolagem de cada avião no aeroporto de Guarulhos,
   obtendo assim alguns parâmetros para a simulação computacional, funcional 
   do aeroporto com sua infraestrutura atual.
-  Posteriormente será  aplicada mudanças nas variáveis quantitativas.
+  Posteriormente será aplicada mudanças nas variáveis quantitativas.
   
   mostrando assim um procedimento ou melhoria destinada  a população dos
   estados do Brasil, principalmente do estado SP assim como de outros países,
@@ -116,7 +116,7 @@
   densidade populacional e a quantidade de aviões.
   
   O terceiro objetivo deste trabalho é medir a satisfação dos clientes, dada
-  a localização, ou seja a satisfação dos clientes no aeroporto de guarulhos, 
+  a localização, ou seja a satisfação dos clientes no aeroporto de Guarulhos, 
   seja pela quantidade de voos ou se teve atrasos ou não.
   
   Essa satisfação será calculada de acordo com o pouso ou e a decolagem com 
@@ -127,7 +127,7 @@
   etc.
   
   
-  %verificar esse trexo
+  %verificar esse trecho
   Este artigo é estruturado da seguinte maneira: a Seção 2 apresenta alguns trabalhos
   relacionados a este, apontando algumas das abordagens discutidas na literatura,
   em seguida, a Seção 3 apresenta a metodologia e técnicas utilizadas para a construção 
@@ -161,49 +161,49 @@
   uma necessidade de gerenciamento de todas as frotas das companhias presentes no aeroporto.
   Com este intuito foi realizado uma simulação que busca, mostrar, instruir, decodificar a
   realidade sobre o gerenciamento do aeroporto, com suas regras de operação interna e normas, 
-  através de um programa que procura transmitir comportamento, gatilhos, sliders e configuração
+  através de um programa que procura transmitir comportamento, gatilhos, \textit{sliders} e configuração
   de tamanhos de cada avião.
-  
-  %gráfico com saída dos avioes
-  \begin{figure}[ht]
-    \centering
-    \includegraphics[width=.6\textwidth]{dados.png}
-    \caption{Resultados aferidos através da análise no site}
-    \label{fig:saida}
-  \end{figure}
   
   \subsection{FlightRadar24h}
   
-  O  FlightRadar24 é um site e aplicativo mobile que disponibiliza a
+  O FlightRadar24 é um site e aplicativo mobile que disponibiliza a
   visualização de aviões do mundo todo, em tempo real, através de mapas 
   fornecidos pela Google.
   
-  Foi análisado e coletado dados, na segunda-feira e terça-feira (25 e 26 de junho), durante 
-  o periodo da tarde, durante pelo menos 1 hora, diariamente foi analisado 21
-  aeronaves saindo (decolagem) 22 aeronaves chegando (aterrisando), foi desconsiderado voos do 
+  Foi analisado e coletado dados, na segunda-feira e terça-feira (25 e 26 de junho), durante 
+  o período da tarde, durante pelo menos 1 hora, diariamente foi analisado 21
+  aeronaves saindo (decolagem) 22 aeronaves chegando (aterrissando), foi desconsiderado voos do 
   tipo privado, esses que não podem ser comprado uma passagem por qualquer
   individuo num aeroporto.
   
   Durante o levantamento de dados para a modelagem do sistema, nota-se que grande parte
-  da frota de aeronaves são Airbus a320 e Boeing 373, que são considerados avioes de média
-  capacidade, limitadoa a 120 a 220, passageiros e o Boeing 373 85 até 215 passageiros 
+  da frota de aeronaves são Airbus a320 e Boeing 373, que são considerados aviões de média
+  capacidade, limitado a 120 a 220, passageiros e o Boeing 373 85 até 215 passageiros 
   dependendo do tipo de configuração, versão e quantidade de classes na aeronave.
+
+    %gráfico com saída dos aviões
+    \begin{figure}[ht]
+      \centering
+      \includegraphics[width=.6\textwidth]{dados.png}
+      \caption{Resultados aferidos através da análise no site}
+      \label{fig:saida}
+    \end{figure}
   
   Foi observado também aeronaves maiores com capacidade acima de 300 passageiros, porém 
   foi um número muito pequeno e apenas voos internacionais usam esse tipo de aeronave.
   
   \subsection{Sistemas para análise do aeroporto}
   
-  Foram utilizado algumas ferramentas para medição e analise do aeroporto 
+  Foram utilizado algumas ferramentas para medição e análise do aeroporto 
   internacional de Guarulhos. De modo geral é possível verificar o trafego
   aero no site (Flight Radar 24.com, 2018). Nesse site afere-se os pousos 
   e decolagens bem como os aviões que estão aguardando autorização para pousar
-  ou decolar. Outra ferramenta para analise é a o site da Infraero. Porém 
+  ou decolar. Outra ferramenta para análise é a o site da Infraero. Porém 
   ele é possível apenas obter os pousos e decolagens , não sendo possível
   por exemplo saber os voos com que não pousaram no aeroporto de Guarulhos.
-  É possível também verificar inloco , observando pousos e decolagens, porém
+  É possível também verificar \textit{inloco}, observando pousos e decolagens, porém
   nesse estudo torna-se desnecessário , visto que os mesmos dados podem ser
-  obtidos através do flight radar ou do site da infraero em tempo quase
+  obtidos através do flight radar ou do site da Infraero em tempo quase
   real.
   
   \subsection{Levantamentos dos dados de entrada da modelagem}
@@ -213,8 +213,8 @@
   simplificar a existência de três tipos de dados: Físico, demanda e tráfego. 
   Abaixo uma breve descrição dos tipos de dados de entrada.
   
-  Físico: É aquilo que não se move, faz parte das configuração física do 
-  aeroporto ou espaço aéreo, como por exemplo pistas, taxiway, pátio, gates, etc.
+  Físico: É aquilo que não se move, faz parte da configuração física do 
+  aeroporto ou espaço aéreo, como por exemplo pistas, \textit{taxiway}, pátio, Gates, etc.
   
   Demanda: São aqueles dados dinâmicos. Dentro dessa classe podem ser inclusos os 
   dados estáticos provenientes de levantamentos de campos, tais como
@@ -226,14 +226,14 @@
   escolha de um dia especifico de movimentação ou por um período de tráfego
   significativo, esse período deve ser do pico de tráfego do aeroporto.
   
-  Regras de Tráfego: São as regras da aviação . Basicamente pode-se resumir
+  Regras de Tráfego: São as regras da aviação. Basicamente pode-se resumir
   em procedimentos e restrições imposto no modelo. Incluem critérios de 
   separação de uma aeronave a outra , velocidade do taxiamento, gerenciamentos
-  dos pátios ou gates.
+  dos pátios ou Gates.
   
   
   \subsection{Validação do Modelo Base}
-  Validar modelo é uma etapa muito importante e necessária para torma-lo 
+  Validar modelo é uma etapa muito importante e necessária para tomá-lo 
   utilizável na pratica . O grande objetivo desta etapa é verificar se os
   resultados produzidos no modelo são coerentes com a realidade das operações
   do aeroporto internacional de Guarulhos, por meio de métricas. 
@@ -246,35 +246,32 @@
   
   
   \section{Configuração do aeroporto}
+
+  A configuração dos sistemas de pistas em geral, o fator mais importante
+  para determinar a capacidade de um aeroporto, sendo que o mais comum 
+  gargalo do sistema aeroportuário como um todo. Quando capacidade do 
+  sistema de pistas é excedido, o aeroporto invariavelmente começa a 
+  sofrer atrasos.
   
-  %essa imagem nao quer ficar apos o texto [H] não funcione nem h!
+  Atualmente o aeroporto de Guarulhos possui 2 pistas, a primeira foi 
+  inaugurada em 1985 com  3000 metros, a segunda possui 3500 metros, 
+  mais tarde ampliada para 3700 metros, há ainda previsto uma terceira
+  pista com extensão de 1500 metros, porém ainda não foi construída. 
+  
+  %essa imagem não quer ficar apos o texto [H] não funcione nem h!
   % b fica na parte inferior da página
-  \begin{figure}[b!]
+  \begin{figure}[h!]
     \centering
     \includegraphics[width=.9\textwidth]{aeroporto.png}
     \caption{Planta geral do aeroporto de Guarulhos}
     \label{fig:aeropoto}
   \end{figure}
-  
-  A configuração do sistemas de pistas em geral, o fator mais importante
-  para determinar a capacidade de um aeroporto , sendo que o mais comum 
-  gargalo do sistema aeroportuário como um todo . Quando capacidade do 
-  sistema de pistas é excedido , o aeroporto invariavelmente começa a 
-  sofrer atrasos.
-  
-  
-  
-  Atualmente o aeroporto de Guarulhos possui 2 pistas , a primeira foi 
-  inaugurada em 1985 com  3000 metros , a segunda possui 3500 metros, 
-  mais tarde ampliada para 3700 metros , há ainda previsto uma terceira
-  pista com extensão de 1500 metros, porém ainda não foi construída. 
-  
-  
+
   \section{Definição de Capacidade e atrasos}
   
   A eficácia de um sistema de transporte é a capacidade e a eficiência de
   se processar uma unidade sendo transportada Ao passo de que o desempenho
-  do sistemas depende de componentes , avalia-se de forma individual cada
+  do sistemas depende de componentes, avalia-se de forma individual cada
   um deles para que seja possível determinar o resultado do sistema como 
   um todo. 
   
@@ -288,8 +285,8 @@
   contínua de serviço. Uma demanda contínua significa que há sempre uma 
   aeronave pronta para pouso ou decolagem. 
   
-  Em termos práticos , quando duas ou mais aeronaves necessitam utilizar ao
-  mesmo tempo a mesma infra-estrutura, resultará em pelo menos uma aeronave 
+  Em termos práticos, quando duas ou mais aeronaves necessitam utilizar ao
+  mesmo tempo a mesma infraestrutura, resultará em pelo menos uma aeronave 
   ter que esperar, incorrendo em atraso. O atraso pode ser calculado em termos
   de minutos médio de espera por aeronave chegando ou partindo em condições 
   de Voos por instrumento ou voo visual. Durante os períodos de pico a demanda
@@ -341,15 +338,15 @@
   
   Através dela podemos construir modelos e reconfigurar sistemas
   reais em questão de dias. Esta obra apresenta fundamentos de modelagem 
-  a processoscontínuos, (Bateman, 2013)
+  a processos contínuos, (Bateman, 2013).
   
   
-  Modelo é uma abstração da realidade , uma representação adaptada de acordo
+  Modelo é uma abstração da realidade, uma representação adaptada de acordo
   com o problema a ser analisado . O objetivo da simulação não é reproduzir
   a realidade em todos os aspectos, o que seria quase inviável, mas sim 
   considerar aspectos relevantes a um sistemas determinado. Pode-se dizer
   também que simulação é o processo de elaborar um modelo de um sistema
-  real e conduzir experimento, com o proposito de compreender o comportamento
+  real e conduzir experimento, com o propósito de compreender o comportamento
   e/ou avaliar várias estratégias para a operação do mesmo. Desta forma a
   simulação traz vantagens como:
   
@@ -369,17 +366,17 @@
     e rolamento, terminais entre outros), antes do emprego de recursos para
     sua implantação.
   
-  \item Identificação de gargalos do sistemas , verificando quais são os 
-    subsistemas, componentes ou processos que limitam o sistemas como um
+  \item Identificação de gargalos dos sistemas, verificando quais são os 
+    subsistemas, componentes ou processos que limitam o sistema como um
     todo.
   
   \item Compreensão de quais variáveis são mais importantes para a capacidade
   e como essas variáveis interagem.
   
   \paragraph{}%position\
-  Deve-se tomar cuidado com os dados obtidos na analise, pois o resultado 
+  Deve-se tomar cuidado com os dados obtidos na análise, pois o resultado 
   da simulação nunca será igual a realidade. Uma boa analise requer 
-  treinamento especializado , qualidade do modelo e capacidade do analista.
+  treinamento especializado, qualidade do modelo e capacidade do analista.
   
   \end{enumerate}
   
@@ -400,16 +397,16 @@
   
   \section{Conclusão}
   
-  O problema discutido neste estudo foi apresentar uma visão abragente 
-  sobre osbeneficios da utilização da simulação de sistemas. Para tanto, foi 
+  O problema discutido neste estudo foi apresentar uma visão abrangente 
+  sobre os benefícios da utilização da simulação de sistemas. Para tanto, foi 
   utilizados ferramentas aplicáveis aos problemas de análise e configurações 
-  aeroportuarias, selecionando especificamente o aeroporto Internacional de
+  aeroportuárias, selecionando especificamente o aeroporto Internacional de
   Guarulhos, para aplicação dessa metodologia, avaliando os resultados dessa
-  aplicação, verificando os riscos e impactos de uma possivel alteração em
-  sua infraestrutura atual, causada por passageiros em excesso ou demanada de 
+  aplicação, verificando os riscos e impactos de uma possível alteração em
+  sua infraestrutura atual, causada por passageiros em excesso ou demanda de 
   aeronaves em determinado momento, que podem ocorrer por diversos fatores.
   
-  Para que a proposta seja concisa, foi modelado o espaço transitável  de aviões, 
+  Para que a proposta seja concisa, foi modelado o espaço transitável de aviões, 
   para que pode ser observada o caminho de cada avião, além de ser utilizados os
   recursos da \textit{engine}, o projeto foi pensado em comando em dois agente principais,
   o avião e uma central de controle. O avião é responsável por se locomover nos espaços estipulados, 
@@ -418,7 +415,7 @@
   portanto qual destino o avião deve seguir, ou seja, se ele tem permissão de pouso, ou se tem
   que ir para uma fila de espera ou tem que arremeter.
   
-  Diante da simulação conclui-se que  existe dois fatores básicos que promove um perfeito
+  Diante da simulação conclui-se que existe dois fatores básicos que promove um perfeito
   funcionamento do aeroporto sem atrasos, os dois fatores especiais são a taxa de pouso 
   de cada avião mais o tempo que cada avião deve esperar dividido por espaços disponíveis
   de estacionamento. 
