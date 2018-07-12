@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.7.11)  12 JUL 2018 15:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.7.11)  12 JUL 2018 16:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -301,7 +301,7 @@ Package pdftex.def Info: aeroporto.png  used on input line 265.
 Here is how much of TeX's memory you used:
  3349 strings out of 494528
  45685 string characters out of 6176065
- 120457 words of memory out of 5000000
+ 120534 words of memory out of 5000000
  6924 multiletter control sequences out of 15000+600000
  35642 words of font info for 45 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
@@ -314,7 +314,7 @@ nts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on artigo-muv.pdf (8 pages, 745875 bytes).
+Output written on artigo-muv.pdf (8 pages, 747992 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
