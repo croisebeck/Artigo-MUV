@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.7.11)  12 JUL 2018 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.7.11)  20 JUL 2018 14:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -142,19 +142,19 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )) (./artigo-muv.aux)
 \openout1 = `artigo-muv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -254,24 +254,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <16> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 34.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 34.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 34.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 34.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 34.
+(Font)              <6> on input line 31.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 36.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 33.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 76.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 73.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
@@ -281,27 +281,27 @@ Underfull \vbox (badness 2600) has occurred while \output is active []
 <dados.png, id=15, 204.765pt x 180.675pt>
 File: dados.png Graphic file (type png)
 <use dados.png>
-Package pdftex.def Info: dados.png  used on input line 187.
+Package pdftex.def Info: dados.png  used on input line 184.
 (pdftex.def)             Requested size: 256.07741pt x 225.96448pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 188.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 185.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 188.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 185.
  [3 <./dados.png>]
 [4]
 <aeroporto.png, id=25, 277.035pt x 168.63pt>
 File: aeroporto.png Graphic file (type png)
 <use aeroporto.png>
-Package pdftex.def Info: aeroporto.png  used on input line 265.
+Package pdftex.def Info: aeroporto.png  used on input line 262.
 (pdftex.def)             Requested size: 384.1096pt x 233.80833pt.
  [5 <./aeroporto.png>] [6] (./artigo-muv.bbl [7]) [8] (./artigo-muv.aux) ) 
 Here is how much of TeX's memory you used:
  3349 strings out of 494528
  45685 string characters out of 6176065
- 120534 words of memory out of 5000000
+ 120457 words of memory out of 5000000
  6924 multiletter control sequences out of 15000+600000
  35642 words of font info for 45 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
@@ -314,7 +314,7 @@ nts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on artigo-muv.pdf (8 pages, 747992 bytes).
+Output written on artigo-muv.pdf (8 pages, 745869 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream
